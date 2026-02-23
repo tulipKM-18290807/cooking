@@ -22,10 +22,12 @@ def what_day_bro(day):
 
 #main program
 
+#asks time
 current_time = time.localtime()
 print(what_day_bro(current_time.tm_wday))
 formatted= time.strftime("%H:%M%p", time.localtime())
 print("Current time right now is: ",formatted)
+what_meal = input("What meal do you want to eat? (breakfast, lunch, or dinner): ")
 
 k = ['Fried','Salad','Soup']
 meat_or_no_meat = ['yes meat','no meat']
@@ -34,7 +36,7 @@ s = random.choice(k)
 meat = random.choice(meat_or_no_meat)
 carbs = random.choice(types_of_carb)
 
-print("Today's meal is: ",s , meat, carbs)
+print("Today's," , what_meal,  "is: ",s , meat, carbs)
 
 #recipes_included = [
 
